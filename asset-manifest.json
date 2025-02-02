@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/buddha-app/static/css/main.ea069eeb.css",
+    "main.js": "/buddha-app/static/js/main.c7a1d65d.js",
+    "static/js/453.aaaee1cc.chunk.js": "/buddha-app/static/js/453.aaaee1cc.chunk.js",
+    "index.html": "/buddha-app/index.html",
+    "main.ea069eeb.css.map": "/buddha-app/static/css/main.ea069eeb.css.map",
+    "main.c7a1d65d.js.map": "/buddha-app/static/js/main.c7a1d65d.js.map",
+    "453.aaaee1cc.chunk.js.map": "/buddha-app/static/js/453.aaaee1cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea069eeb.css",
+    "static/js/main.c7a1d65d.js"
+  ]
+}
