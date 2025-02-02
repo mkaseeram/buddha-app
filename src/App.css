@@ -1,0 +1,237 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 18%;
+  background-color: #c6c2c2;
+  padding: 2%;
+  transition: width 0.3s;
+  height: 100dvh;
+  overflow-y: auto;
+}
+
+.sidebar.closed {
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.toggle-btn {
+  background-color: #333;
+  opacity: 0.3;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 11px 12px 8px 13px;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-content h1 {
+  font-weight: 400;
+  font-family: ui-monospace;
+}
+
+.icons-container {
+  display: flex;
+}
+
+.icons {
+  padding: 12px;
+  justify-items: center;
+}
+
+.icon {
+  background-color: #adadad;
+  padding: 14px 14px 9px 15px;
+  border-radius: 50px;
+}
+
+.details p {
+  margin: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.read-more {
+  display: flex;
+  color: rgb(144, 72, 21);
+  font-weight: 500;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button1 {
+  background-color: rgb(144, 72, 21);
+  padding: 15px;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+}
+
+
+.button2 {
+  color: rgb(144, 72, 21);
+  padding: 15px;
+  border: 2px solid rgb(144, 72, 21);
+  border-radius: 3px;
+}
+
+.btn{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  height: 100dvh;
+  overscroll-behavior-y: none;
+}
+
+.image-container {
+  position: relative;
+  background-image: url("D:\React Js practice\Buddha App\buddha-app\public\gray-gradient-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.statue-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 25%;
+    padding: 3%;
+  }
+
+  .sidebar-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .details p {
+    font-size: 14px;
+  }
+
+  .button1, .button2 {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .statue-image {
+    max-width: 70%;
+  }
+}
+
+/* Small Tablets */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .sidebar.closed {
+    width: 0;
+    padding: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .statue-image {
+    max-width: 60%;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 10%;
+  }
+
+  .sidebar-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .details p {
+    font-size: 12px;
+  }
+
+  .button1, .button2 {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .statue-image {
+    max-width: 50%;
+  }
+
+  .toggle-btn {
+    padding: 8px 10px 6px 11px;
+    font-size: 12px;
+  }
+}
+
+/* Very Small Mobile Devices */
+@media (max-width: 320px) {
+  .sidebar {
+    padding: 12%;
+  }
+
+  .sidebar-content h1 {
+    font-size: 1rem;
+  }
+
+  .details p {
+    font-size: 10px;
+  }
+
+  .button1, .button2 {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .statue-image {
+    max-width: 40%;
+  }
+
+  .toggle-btn {
+    padding: 6px 8px 4px 9px;
+    font-size: 10px;
+  }
+}
